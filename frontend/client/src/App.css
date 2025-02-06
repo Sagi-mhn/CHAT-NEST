@@ -1,0 +1,64 @@
+/* 🌟 Centrage parfait du formulaire */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+/* 🌟 Style du titre */
+.enter-username {
+  font-size: 22px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* 🌟 Style du champ de saisie */
+.username-area {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.username-area:focus {
+  border-color: #35a470;
+}
+
+/* 🌟 Style du bouton */
+.buttonClass {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+/* 🌟 Responsive */
+@media (max-width: 480px) {
+  .login-form {
+    width: 90%;
+    padding: 20px;
+  }
+}

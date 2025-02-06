@@ -1,0 +1,110 @@
+.textarea-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+textarea {
+  width: 97.5%;
+  height: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  background: transparent;
+  color: #000000;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.send-button {
+  margin-top: 10px;
+  display: inline-block;
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  max-width: 1200px;
+  gap: 15px;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+  max-width: 60%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.message-sent {
+  background-color: #35a470;
+  align-self: flex-end;
+  text-align: right;
+  border-top-right-radius: 0;
+}
+
+.message-received {
+  background-color: #ffffff;
+  align-self: flex-start;
+  text-align: left;
+  border-top-left-radius: 0;
+}
+
+.private-messages {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .messages,
+  .private-messages {
+    font-size: 14px;
+  }
+
+  .textarea-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  textarea {
+    width: 93%;
+    height: "25%"
+  }
+
+  .send-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,18 @@
+/* global.css */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Pour les navigateurs non-WebKit */
+  scrollbar-color: rgba(255, 99, 71, 0.8) rgba(255, 99, 71, 0.2); /* Firefox */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 99, 71, 0.8);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 99, 71, 0.2);
+}

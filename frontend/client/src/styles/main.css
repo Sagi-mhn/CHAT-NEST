@@ -1,0 +1,47 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: linear-gradient(
+    to bottom right,
+    rgba(252, 203, 144, 1),
+    rgba(213, 126, 235, 1)
+  );
+  --card-background: rgba(255, 255, 255, 0.8);
+  --card-border-radius: 20px;
+  --card-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  --text-color: #333;
+}
+
+body,
+html,
+#root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: var(--background-color);
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+
+.buttonClass{
+  margin-top: 10px;
+  display: inline-block;
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.buttonClass:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+

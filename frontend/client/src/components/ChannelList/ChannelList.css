@@ -1,0 +1,32 @@
+.create-channel-input {
+  width: -webkit-fill-available;
+  overflow: hidden;
+  height: 23px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  color: #333;
+  padding: 10px;
+  font-size: 13px;
+  resize: none;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-channel-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+.channel-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.channel-list-item .MuiListItemText-root {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
